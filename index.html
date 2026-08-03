@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angelo's Pizza &amp; Italian Restaurant | Holiday, FL</title>
+  <meta name="description" content="Authentic NY-style pizza and Italian cuisine in Holiday, Florida. Fresh ingredients, homemade sauces, and family recipes since day one. Dine-in, takeout &amp; delivery.">
+  <meta name="keywords" content="Angelo's Pizza, Italian Restaurant, Holiday FL, NY style pizza, Italian food, pasta, seafood, veal, chicken parmigiana">
+  <meta property="og:title" content="Angelo's Pizza &amp; Italian Restaurant | Holiday, FL">
+  <meta property="og:description" content="Authentic NY-style pizza and Italian cuisine in Holiday, Florida.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">Angelo's</a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#specials">Specials</a></li>
+        <li><a href="#catering">Catering</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="tel:+17273347939" class="nav-cta">Order Now</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline">Est. Holiday, Florida</p>
+      <h1>Angelo's</h1>
+      <h2>Pizza &amp; Italian Restaurant</h2>
+      <p class="hero-sub">Authentic NY-style pizza &amp; classic Italian cuisine<br>made with the freshest ingredients</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">View Menu</a>
+        <a href="tel:+17273347939" class="btn btn-outline">Call to Order</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <a href="#about" aria-label="Scroll down">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span class="section-label">Our Story</span>
+          <h2>Welcome to Angelo's<br><em>Ristorante Italiano</em></h2>
+          <p>We use the freshest ingredients available to prepare your meal. Good cuisine cannot be rushed &mdash; every sauce is homemade, every dish prepared with care and the tradition of authentic Italian cooking.</p>
+          <p>From our signature NY-style thin crust pizza to our chef's recommended seafood specialties, Angelo's brings the flavors of Italy to Holiday, Florida. Whether you're joining us for a family dinner, a casual lunch, or ordering takeout, we promise an experience that keeps you coming back.</p>
+          <p class="about-signature">&mdash; Angelo Rossi, <em>Chef &amp; Owner</em></p>
+          <div class="about-features">
+            <div class="feature">
+              <div class="feature-icon">🍕</div>
+              <span>NY-Style Pizza</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🍝</div>
+              <span>Homemade Pasta</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🥩</div>
+              <span>Fresh Daily</span>
+            </div>
+            <div class="feature">
+              <div class="feature-icon">🍷</div>
+              <span>Beer &amp; Wine</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-image-placeholder">
+            <div class="placeholder-content">
+              <span class="placeholder-icon">🇮🇹</span>
+              <span class="placeholder-text">Buon Appetito!</span>
+            </div>
+          </div>
+          <div class="about-hours">
+            <h3>Hours</h3>
+            <div class="hours-row"><span>Monday &ndash; Thursday</span><span>11:00 AM &ndash; 9:00 PM</span></div>
+            <div class="hours-row"><span>Friday &ndash; Saturday</span><span>11:00 AM &ndash; 10:00 PM</span></div>
+            <div class="hours-row"><span>Sunday</span><span>12:00 PM &ndash; 9:00 PM</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section menu-section" id="menu">
+    <div class="container">
+      <span class="section-label center">Il Nostro Menu</span>
+      <h2 class="section-title">Our Menu</h2>
+      <p class="section-desc">From classic appetizers to chef's specialties &mdash; every dish made with love and the finest ingredients.</p>
+
+      <!-- Menu Category Tabs -->
+      <div class="menu-tabs">
+        <button class="menu-tab active" data-category="appetizers">Appetizers</button>
+        <button class="menu-tab" data-category="pizza">Pizza &amp; Calzones</button>
+        <button class="menu-tab" data-category="pasta">Pasta</button>
+        <button class="menu-tab" data-category="chicken">Chicken</button>
+        <button class="menu-tab" data-category="veal">Veal</button>
+        <button class="menu-tab" data-category="seafood">Seafood</button>
+        <button class="menu-tab" data-category="subs">Subs</button>
+        <button class="menu-tab" data-category="kids">Kids &amp; Desserts</button>
+      </div>
+
+      <!-- Menu Content -->
+      <div class="menu-content">
+
+        <!-- Appetizers -->
+        <div class="menu-category active" id="appetizers">
+          <div class="menu-grid">
+            <div class="menu-subcategory">
+              <h3>Cold Antipasti</h3>
+              <div class="menu-item"><div class="item-info"><h4>House Salad</h4></div><span class="item-price">$4.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Caesar Salad</h4></div><span class="item-price">$5.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Caesar Salad</h4></div><span class="item-price">$12.00</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chef Salad</h4><p>Lettuce, meat, eggs, and vegetables</p></div><span class="item-price">$11.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Greek Salad</h4><p>Comes with potato salad</p></div><span class="item-price">$11.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Antipasto Salad</h4><p>Traditional Italian salad</p></div><span class="item-price">$13.20+</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Mozzarella Caprese Salad</h4><p>Mozzarella, tomatoes, and basil</p></div><span class="item-price">$10.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Cocktail Salad</h4></div><span class="item-price">$11.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Calamari &amp; Scungilli Salad</h4></div><span class="item-price">$15.60</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Hot Antipasti</h3>
+              <div class="menu-item"><div class="item-info"><h4>Garlic Knots</h4></div><span class="item-price">$3.25+</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Garlic Bread</h4></div><span class="item-price">$4.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Garlic Bread with Cheese</h4></div><span class="item-price">$5.55</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Bruschetta</h4><p>Add fresh mozzarella for extra</p></div><span class="item-price">$10.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Mozzarella Sticks</h4></div><span class="item-price">$10.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Fried Calamari</h4></div><span class="item-price">$12.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Wings</h4><p>Naked, mild, medium, hot, BBQ, or garlic Parmesan</p></div><span class="item-price">$13.80+</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Combo Appetizer</h4><p>Mozzarella sticks, fried shrimp, and chicken tenders</p></div><span class="item-price">$15.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Stuffed Mushrooms</h4></div><span class="item-price">$10.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Portabella Mushrooms</h4></div><span class="item-price">$10.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Clams Oreganato</h4></div><span class="item-price">$10.20+</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Mussels Marinara</h4></div><span class="item-price">$10.20+</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Tenders</h4></div><span class="item-price">$10.50</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Tenders &amp; Fries</h4></div><span class="item-price">$12.60</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pizza & Calzones -->
+        <div class="menu-category" id="pizza">
+          <div class="menu-grid">
+            <div class="menu-subcategory">
+              <h3>Neapolitan Pizza <span class="sub-note">Thin crust, hand-tossed</span></h3>
+              <p class="menu-note">Add your favorite toppings for an additional charge.</p>
+              <div class="menu-item"><div class="item-info"><h4>Cheese Pizza Slice</h4></div><span class="item-price">$2.25</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Sicilian Pizza Slice</h4><p>Thick crust pan pizza</p></div><span class="item-price">$3.25</span></div>
+              <p class="menu-note" style="margin-top:1rem;">Call for full pie pricing: <a href="tel:+17273347939">(727) 334-7939</a></p>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Calzones &amp; Stromboli</h3>
+              <div class="menu-item"><div class="item-info"><h4>Calzone</h4><p>Ricotta, mozzarella, and ham</p></div><span class="item-price">$9.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Spinach Calzone</h4><p>Ricotta, mozzarella, and spinach</p></div><span class="item-price">$10.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Sausage Roll</h4><p>Sauce, sausage, onions, and mozzarella</p></div><span class="item-price">$9.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Stromboli</h4><p>Mozzarella, ham, meatball, sausage, and pepperoni</p></div><span class="item-price">$11.40</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pasta -->
+        <div class="menu-category" id="pasta">
+          <p class="menu-note">Our tomato sauce has meat flavoring. We cook our pasta al dente. All entrees include bread, butter, and salad.</p>
+          <div class="menu-grid">
+            <div class="menu-subcategory">
+              <h3>Classic Pasta</h3>
+              <div class="menu-item"><div class="item-info"><h4>Spaghetti, Linguini, or Penne</h4><p>Choice of sauce</p></div><span class="item-price">$12.00+</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Cheese Ravioli</h4></div><span class="item-price">$13.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Gnocchi</h4><p>With choice of sauce</p></div><span class="item-price">$15.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Cavatelli</h4><p>With choice of sauce</p></div><span class="item-price">$15.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Tortellini</h4><p>With choice of sauce</p></div><span class="item-price">$15.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Tortellini alla Panna</h4><p>With ham and Alfredo sauce</p></div><span class="item-price">$16.80</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Specialty Pasta</h3>
+              <div class="menu-item"><div class="item-info"><h4>Fettuccini Alfredo</h4><p>Eggs, butter, cream, and cheese</p></div><span class="item-price">$16.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Fettuccini Alfredo w/ Chicken</h4></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Fettuccini Alfredo w/ Broccoli</h4></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Penne alla Vodka</h4><p>Bacon, prosciutto, onion, vodka sauce, light cream</p></div><span class="item-price">$17.10</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Pasta Carbonara</h4><p>Prosciutto, bacon, onions, and Parmigiano</p></div><span class="item-price">$17.10</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Penne w/ Broccoli</h4></div><span class="item-price">$18.00</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Pasta Puttanesca</h4><p>Olives, mushrooms, pepperoncini, onions, white wine</p></div><span class="item-price">$18.00</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Casseroles <span class="sub-note">Served with butter &amp; salad</span></h3>
+              <div class="menu-item"><div class="item-info"><h4>Baked Penne</h4></div><span class="item-price">$13.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Manicotti</h4></div><span class="item-price">$12.00</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Stuffed Shells</h4></div><span class="item-price">$13.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Lasagna</h4></div><span class="item-price">$14.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Spinach Lasagna</h4></div><span class="item-price">$14.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Baked Ravioli</h4></div><span class="item-price">$14.10</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Eggplant Parmigiana</h4><p>Includes pasta</p></div><span class="item-price">$16.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Eggplant Rolatini</h4><p>Includes pasta</p></div><span class="item-price">$17.40</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chicken -->
+        <div class="menu-category" id="chicken">
+          <p class="menu-note">All entrees include pasta, bread, butter, and salad. Substitute broccoli for pasta available.</p>
+          <div class="menu-grid">
+            <div class="menu-subcategory full-width">
+              <h3>Pollo / Chicken</h3>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Parmigiana</h4><p>Pan-fried cutlet topped with tomato sauce and mozzarella</p></div><span class="item-price">$20.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Piccata</h4><p>Sautéed with white wine, capers, lemon, and butter</p></div><span class="item-price">$20.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Francese</h4><p>Dipped in egg, sautéed in butter, white wine, and lemon</p></div><span class="item-price">$20.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Marsala</h4><p>Sautéed with mushrooms in a Marsala wine sauce</p></div><span class="item-price">$20.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Portabella</h4><p>Sherry, garlic, portabella mushrooms, and provolone cheese</p></div><span class="item-price">$20.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Romana</h4><p>Sautéed with ham, mushrooms, artichoke hearts in a special wine sauce</p></div><span class="item-price">$20.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Angelo</h4><p>Dipped in egg, topped with ham, mozzarella, tomato in white wine sauce</p></div><span class="item-price">$20.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Cacciatore</h4><p>Half chicken sautéed with onions and mushrooms in marinara</p></div><span class="item-price">$20.40</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Veal -->
+        <div class="menu-category" id="veal">
+          <p class="menu-note">All entrees include pasta, bread, butter, and salad. Substitute broccoli for pasta available.</p>
+          <div class="menu-grid">
+            <div class="menu-subcategory">
+              <h3>Vitello / Veal</h3>
+              <div class="menu-item"><div class="item-info"><h4>Veal Parmigiana</h4><p>Pan-fried cutlet topped with tomato sauce and mozzarella</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Veal &amp; Peppers</h4><p>Sautéed with garlic and peppers in marinara</p></div><span class="item-price">$18.60</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Scallopini</h3>
+              <div class="menu-item"><div class="item-info"><h4>Veal Rolatini</h4><p>Stuffed with mozzarella &amp; prosciutto, Marsala wine sauce</p></div><span class="item-price">$22.50</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Veal Saltimbocca</h4><p>Marsala wine sauce topped with toasted prosciutto &amp; mozzarella</p></div><span class="item-price">$22.50</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Veal Francese</h4><p>Dipped in egg, sautéed in butter, white wine, and lemon</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Veal Marsala</h4><p>Sautéed with mushrooms in Marsala wine sauce</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Veal Piccata</h4><p>Sautéed with white wine, capers, lemon, and butter</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Veal Margherita</h4><p>Sautéed with mushrooms, sherry wine, and light creamy sauce</p></div><span class="item-price">$21.60</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Carne / Meats</h3>
+              <div class="menu-item"><div class="item-info"><h4>Sausage &amp; Peppers</h4></div><span class="item-price">$17.40</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Sausage &amp; Peppers w/ Mushrooms</h4></div><span class="item-price">$18.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Trippa alla Romana</h4><p>Cooked with onions, white wine, marinara, and Romano cheese</p></div><span class="item-price">$18.00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seafood -->
+        <div class="menu-category" id="seafood">
+          <p class="menu-note">All entrees include pasta, bread, butter, and salad. Substitute broccoli for pasta available.</p>
+          <div class="menu-grid">
+            <div class="menu-subcategory">
+              <h3>Specialità del Mare / Seafood</h3>
+              <div class="menu-item"><div class="item-info"><h4>Zuppa di Pesce</h4><p>Clams, mussels, scungilli, calamari &amp; shrimp in special seafood sauce</p></div><span class="item-price">$28.75</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Zuppa di Clams</h4><p>Fresh clams sautéed in choice of sauce</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Calamari Marinara</h4></div><span class="item-price">$19.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Calamari Fra Diavolo</h4></div><span class="item-price">$19.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Scungilli Marinara</h4></div><span class="item-price">$27.00</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Shrimp</h3>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Marinara</h4><p>Sautéed with garlic &amp; wine in homemade marinara</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Fra Diavolo</h4><p>Sautéed with garlic &amp; wine in homemade fra diavolo</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Parmigiana</h4><p>Breaded, topped with marinara and mozzarella</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Francese</h4><p>Dipped in egg, sautéed with wine, lemon, and butter</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Scampi</h4><p>Sautéed in our special garlic sauce</p></div><span class="item-price">$21.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Rossini</h4><p>Dipped in egg, white wine sauce, ham, tomato, mozzarella</p></div><span class="item-price">$22.20</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Fish</h3>
+              <div class="menu-item"><div class="item-info"><h4>Grouper Roberto</h4><p>Onion, mushroom, butter, and sherry</p></div><span class="item-price">$20.00</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Tilapia alla Napolitana</h4><p>Sautéed with onions, garlic, wine, basil, light marinara</p></div><span class="item-price">$18.00</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Northern Tilapia</h4><p>Broiled with lemon and butter</p></div><span class="item-price">$18.00</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Subs -->
+        <div class="menu-category" id="subs">
+          <div class="menu-grid">
+            <div class="menu-subcategory">
+              <h3>House Specials</h3>
+              <div class="menu-item"><div class="item-info"><h4>Angelo's Special Sub</h4><p>Ham, cheese, salami, capicola, lettuce, tomato, oil &amp; vinegar</p></div><span class="item-price">$10.00</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Sicilian Special Sub</h4><p>Ham, cheese, salami, capicola &mdash; served hot</p></div><span class="item-price">$10.50</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Cold Subs <span class="sub-note">Served with chips</span></h3>
+              <div class="menu-item"><div class="item-info"><h4>Ham &amp; Cheese</h4></div><span class="item-price">$9.30</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Turkey Breast &amp; Cheese</h4></div><span class="item-price">$9.30</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Capicola &amp; Cheese</h4></div><span class="item-price">$9.30</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Ham, Salami &amp; Cheese</h4></div><span class="item-price">$9.30</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Hot Subs <span class="sub-note">Served with chips</span></h3>
+              <div class="menu-item"><div class="item-info"><h4>Meatball Parmigiana</h4></div><span class="item-price">$9.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Sausage &amp; Peppers</h4></div><span class="item-price">$9.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Eggplant Parmigiana</h4></div><span class="item-price">$9.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Chicken Parmigiana</h4></div><span class="item-price">$10.50</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Veal Parmigiana</h4></div><span class="item-price">$11.10</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Steak Special</h4><p>Mushrooms, peppers, onions, and cheese</p></div><span class="item-price">$10.80</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Shrimp Parmigiana</h4></div><span class="item-price">$11.10</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kids & Desserts -->
+        <div class="menu-category" id="kids">
+          <div class="menu-grid">
+            <div class="menu-subcategory">
+              <h3>Children's Menu <span class="sub-note">Under 10 &mdash; beverage included</span></h3>
+              <div class="menu-item"><div class="item-info"><h4>Kids Spaghetti w/ Tomato Sauce</h4></div><span class="item-price">$9.50</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Kids Spaghetti w/ Meatball</h4></div><span class="item-price">$10.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Kids Stuffed Shells</h4></div><span class="item-price">$10.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Kids Chicken Tenders &amp; Pasta</h4></div><span class="item-price">$10.20</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Kids Baked Penne</h4></div><span class="item-price">$9.60</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Kids Manicotti</h4></div><span class="item-price">$8.40</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Dolci / Desserts</h3>
+              <div class="menu-item"><div class="item-info"><h4>Homemade Tiramisu</h4></div><span class="item-price">$5.70</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Homemade Cannoli</h4></div><span class="item-price">$5.70</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Cheesecake</h4></div><span class="item-price">$5.10</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Spumoni Ball</h4></div><span class="item-price">$6.50</span></div>
+            </div>
+            <div class="menu-subcategory">
+              <h3>Beverages</h3>
+              <div class="menu-item"><div class="item-info"><h4>Soda</h4></div><span class="item-price">$2.50</span></div>
+              <div class="menu-item"><div class="item-info"><h4>2 Liter Soda</h4></div><span class="item-price">$3.90</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Iced Tea</h4></div><span class="item-price">$2.25</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Espresso</h4></div><span class="item-price">$2.50</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Cappuccino</h4></div><span class="item-price">$4.95</span></div>
+              <div class="menu-item"><div class="item-info"><h4>Italian Water</h4></div><span class="item-price">$4.25</span></div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Specials Banner -->
+  <section class="section specials" id="specials">
+    <div class="specials-overlay"></div>
+    <div class="container">
+      <span class="section-label center light">Chef's Recommendations</span>
+      <h2 class="section-title light">Lunch Specials</h2>
+      <p class="section-desc light">Served Monday &ndash; Friday until 4:00 PM. All lunch chicken entrees served with salad and pasta.</p>
+      <div class="specials-grid">
+        <div class="special-card">
+          <div class="special-price">$12.60</div>
+          <h3>Lunch Chicken</h3>
+          <p>Choose from Parmigiana, Marsala, Francese, Piccata, Angelo's, Portabella, or Romana</p>
+        </div>
+        <div class="special-card">
+          <div class="special-price">$10.15+</div>
+          <h3>Lunch Pasta</h3>
+          <p>Spaghetti, Penne, or Linguini with your choice of sauce, served with salad</p>
+        </div>
+        <div class="special-card">
+          <div class="special-price">$10.50</div>
+          <h3>Lunch Lasagna</h3>
+          <p>Classic or spinach lasagna, served with salad</p>
+        </div>
+        <div class="special-card">
+          <div class="special-price">$13.50</div>
+          <h3>Lunch Veal Parm</h3>
+          <p>Veal cutlet pan-fried and topped with tomato sauce and mozzarella</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Catering -->
+  <section class="section catering-section" id="catering">
+    <div class="container">
+      <div class="catering-grid">
+        <div class="catering-text">
+          <span class="section-label">Events &amp; Parties</span>
+          <h2>Catering Services</h2>
+          <p>Let Angelo's bring the authentic Italian experience to your next event. From intimate gatherings to large celebrations, we offer full catering services with our complete menu.</p>
+          <ul class="catering-list">
+            <li>Corporate events &amp; office parties</li>
+            <li>Birthday &amp; anniversary celebrations</li>
+            <li>Holiday gatherings</li>
+            <li>Custom menu options available</li>
+          </ul>
+          <a href="tel:+17273347939" class="btn btn-primary">Call for Catering</a>
+        </div>
+        <div class="catering-image">
+          <div class="catering-image-placeholder">
+            <div class="placeholder-content">
+              <span class="placeholder-icon">🎉</span>
+              <span class="placeholder-text">Let Us Cater<br>Your Next Event</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <footer class="footer" id="contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-info">
+          <h2 class="footer-logo">Angelo's</h2>
+          <p class="footer-tagline">Pizza &amp; Italian Restaurant</p>
+          <p class="footer-quote">"Good cuisine cannot be rushed."<br><em>&mdash; Angelo Rossi</em></p>
+        </div>
+        <div class="footer-contact">
+          <h3>Contact Us</h3>
+          <p><strong>Address:</strong><br>2621 US Highway 19<br>Holiday, FL 34691</p>
+          <p><strong>Phone:</strong><br><a href="tel:+17273347939">(727) 334-7939</a></p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/AngelosPizzaHoliday/" target="_blank" rel="noopener" aria-label="Facebook" class="social-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-hours">
+          <h3>Hours</h3>
+          <div class="hours-row"><span>Mon &ndash; Thu</span><span>11am &ndash; 9pm</span></div>
+          <div class="hours-row"><span>Fri &ndash; Sat</span><span>11am &ndash; 10pm</span></div>
+          <div class="hours-row"><span>Sunday</span><span>12pm &ndash; 9pm</span></div>
+        </div>
+        <div class="footer-map">
+          <h3>Find Us</h3>
+          <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3518.5!2d-82.7375!3d28.1875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2907d1e555555%3A0x1234567890abcdef!2s2621+US-19%2C+Holiday%2C+FL+34691!5e0!3m2!1sen!2sus!4v1234567890" width="100%" height="200" style="border:0;border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Angelo's Pizza location on Google Maps"></iframe>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Angelo's Pizza &amp; Italian Restaurant. All rights reserved.</p>
+        <p class="footer-credit">Dine-in &bull; Takeout &bull; Delivery</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
