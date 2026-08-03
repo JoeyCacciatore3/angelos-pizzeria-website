@@ -127,11 +127,7 @@ img { max-width: 100%; display: block; }
   position: relative;
   min-height: 100vh;
   display: flex; align-items: center; justify-content: center;
-  background:
-    linear-gradient(180deg, rgba(26,26,26,0.4) 0%, rgba(26,26,26,0.7) 100%),
-    url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect fill="%231a1a1a" width="1200" height="800"/><text x="50%" y="50%" font-size="120" text-anchor="middle" fill="%23333" dominant-baseline="middle">🍕</text></svg>');
-  background-size: cover;
-  background-position: center;
+  background: url('images/hero-bg.jpg') center center / cover no-repeat;
   background-color: var(--charcoal);
   text-align: center;
   color: var(--white);
@@ -202,16 +198,14 @@ img { max-width: 100%; display: block; }
 .feature-icon { font-size: 2rem; margin-bottom: 6px; }
 .feature span { font-size: 0.8rem; font-weight: 600; color: var(--text-light); letter-spacing: 0.5px; }
 
-.about-image-placeholder, .catering-image-placeholder {
-  background: linear-gradient(135deg, var(--red) 0%, var(--red-dark) 100%);
+.about-photo {
+  width: 100%;
+  height: 420px;
+  object-fit: cover;
   border-radius: var(--radius);
-  height: 300px;
-  display: flex; align-items: center; justify-content: center;
   margin-bottom: 24px;
+  box-shadow: var(--shadow-lg);
 }
-.placeholder-content { text-align: center; color: var(--white); }
-.placeholder-icon { display: block; font-size: 4rem; margin-bottom: 12px; }
-.placeholder-text { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-style: italic; }
 
 .about-hours {
   background: var(--cream);
@@ -288,12 +282,39 @@ img { max-width: 100%; display: block; }
   white-space: nowrap;
 }
 
+/* --- Food Gallery --- */
+.food-gallery {
+  overflow: hidden;
+  background: var(--charcoal);
+}
+.gallery-track {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+}
+.gallery-item {
+  overflow: hidden;
+  height: 280px;
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease, filter 0.6s ease;
+  filter: brightness(0.85);
+}
+.gallery-item:hover img {
+  transform: scale(1.08);
+  filter: brightness(1);
+}
+
 /* --- Specials --- */
 .specials {
   position: relative;
   background:
-    linear-gradient(135deg, rgba(139,26,26,0.92) 0%, rgba(92,16,16,0.95) 100%),
-    var(--charcoal);
+    linear-gradient(135deg, rgba(139,26,26,0.88) 0%, rgba(26,26,26,0.92) 100%),
+    url('images/restaurant-alt1.jpg') center center / cover no-repeat;
+  background-attachment: fixed;
   color: var(--white);
   overflow: hidden;
 }
@@ -336,7 +357,13 @@ img { max-width: 100%; display: block; }
   color: var(--green);
   font-weight: 700;
 }
-.catering-image-placeholder { height: 400px; }
+.catering-photo {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+}
 
 /* --- Footer --- */
 .footer {
@@ -402,11 +429,16 @@ img { max-width: 100%; display: block; }
 
   .hero h1 { font-size: 3.5rem; }
   .about-features { grid-template-columns: repeat(2, 1fr); }
+  .about-photo { height: 320px; }
   .menu-grid { grid-template-columns: 1fr; }
   .menu-tabs { gap: 6px; }
   .menu-tab { padding: 8px 16px; font-size: 0.8rem; }
   .footer-grid { grid-template-columns: 1fr; gap: 32px; }
   .specials-grid { grid-template-columns: 1fr 1fr; }
+  .specials { background-attachment: scroll; }
+  .gallery-track { grid-template-columns: repeat(2, 1fr); }
+  .gallery-item { height: 200px; }
+  .catering-photo { height: 350px; }
 }
 
 @media (max-width: 480px) {
